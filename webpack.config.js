@@ -55,9 +55,9 @@ module.exports = (_, argv) => ({
       name: "JohnLesley",
       filename: "remoteEntry.js",
       remotes: {
-        host: "host@localhost:3004/remoteEntry.js",
+        // host: "host@localhost:3004/remoteEntry.js",
       },
-      exposes: {},
+      exposes: { "./App": "./src/App.jsx" },
       shared: {
         ...deps,
         react: {
